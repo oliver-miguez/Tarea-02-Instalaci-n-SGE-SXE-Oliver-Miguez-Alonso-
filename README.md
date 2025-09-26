@@ -3,9 +3,9 @@
 ## 1º Instalar Dependencias:
 Primero deberemos instalar las siguientes dependencias para poder instalar y ejetura todo de manera correcta: 
 
-sudo apt update
+    sudo apt update
 
-sudo apt install apache2 \
+    sudo apt install apache2 \
 
                  ghostscript \
                  
