@@ -132,7 +132,15 @@ Encuentra esto:
     define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
     define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
     define( 'NONCE_SALT',       'put your unique phrase here' );
+    
+![Foto9](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/9.png)
 
 Borralo(ctrl+k). Luego remplaza el contenido con los valores que obtengas aqui: https://api.wordpress.org/secret-key/1.1/salt/. 
 
 Guardalo y cierralo con Ctr+x
+
+## Configurar WordPress
+### Por último en tu navedor introduce lo siguiente:
+    http://tuIpDelServer/
+
+Configura , añadiendo nombre, contraseña, descargas y listo
