@@ -104,3 +104,35 @@ Y la creamos , le damos permisos y salimos:
     
     mysql> quit
     Bye
+
+## 5º Conectar WordPress a la base de datos
+### Para comenzar debemos añadir esta linea a la consola:
+
+    sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
+    
+Y añadimos las siguientes credenciales : 
+
+    sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
+    sudo -u www-data sed -i 's/username_here/wordpress/' /srv/www/wordpress/wp-config.php
+    sudo -u www-data sed -i 's/password_here/<your-password>/' /srv/www/wordpress/wp-config.php
+    
+![Imagen8](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/8.png)
+
+Por último modificamos la configuracion :
+
+    sudo -u www-data nano /srv/www/wordpress/wp-config.php
+
+Encuentra esto:
+    
+    define( 'AUTH_KEY',         'put your unique phrase here' );
+    define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+    define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+    define( 'NONCE_KEY',        'put your unique phrase here' );
+    define( 'AUTH_SALT',        'put your unique phrase here' );
+    define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+    define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+    define( 'NONCE_SALT',       'put your unique phrase here' );
+
+Borralo(ctrl+k). Luego remplaza el contenido con los valores que obtengas aqui: https://api.wordpress.org/secret-key/1.1/salt/. 
+
+Guardalo y cierralo con Ctr+x
