@@ -36,6 +36,8 @@
 
 ![Foto 1](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/1.png)
 
+__________________________________________________________________________________________________________________________
+
 ## 2º Instalar WordPress
 ### Deberemos crear un directorio para la instalación y a continuación y descargar los archivos de Wordpress.org
 
@@ -44,3 +46,7 @@
     curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
     
 ![Foto2](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/2.png)
+
+__________________________________________________________________________________________________________________________
+
+## 3º Configurar Apache para WordPress
