@@ -85,3 +85,22 @@ ________________________________________________________________________________
 ### Para configurar WordePress deberemos crear una base de datos , en este caso utilizaré MySql
 
 ![Foto 6](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/6.png)
+
+Y la creamos , le damos permisos y salimos:
+
+    mysql> CREATE DATABASE wordpress;
+    Query OK, 1 row affected (0,00 sec)
+    
+    mysql> CREATE USER wordpress@localhost IDENTIFIED BY '<your-password>';
+    Query OK, 1 row affected (0,00 sec)
+    
+    mysql> GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
+        -> ON wordpress.*
+        -> TO wordpress@localhost;
+    Query OK, 1 row affected (0,00 sec)
+    
+    mysql> FLUSH PRIVILEGES;
+    Query OK, 1 row affected (0,00 sec)
+    
+    mysql> quit
+    Bye
