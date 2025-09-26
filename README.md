@@ -77,3 +77,11 @@ Y Activarla con los siguiente comandos por consola:
 Y recargamos apache para que los cambios se guarden y funcionen correctamente :
 
     sudo service apache2 reload
+
+__________________________________________________________________________________________________________________________
+
+
+## 4º Configurar la base de datos
+### Para configurar WordePress deberemos crear una base de datos , en este caso utilizaré MySql
+
+![Foto 6](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/6.png)
