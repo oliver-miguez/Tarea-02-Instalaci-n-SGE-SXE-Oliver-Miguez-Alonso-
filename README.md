@@ -35,3 +35,4 @@ Primero deberemos instalar las siguientes dependencias para poder instalar y eje
                  
 
 ![Foto 1](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/1.png)
+
