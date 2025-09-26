@@ -42,3 +42,5 @@
     sudo mkdir -p /srv/www
     sudo chown www-data: /srv/www
     curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
+    
+![Foto2](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/2.png)
