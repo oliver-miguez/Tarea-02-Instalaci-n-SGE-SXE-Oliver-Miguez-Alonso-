@@ -50,3 +50,30 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________
 
 ## 3º Configurar Apache para WordPress
+### Debemos de crear un sitio Apache para WordPress
+
+    <VirtualHost *:80>
+        DocumentRoot /srv/www/wordpress
+        <Directory /srv/www/wordpress>
+            Options FollowSymLinks
+            AllowOverride Limit Options FileInfo
+            DirectoryIndex index.php
+            Require all granted
+        </Directory>
+        <Directory /srv/www/wordpress/wp-content>
+            Options FollowSymLinks
+            Require all granted
+        </Directory>
+    </VirtualHost>
+Y Activarla con los siguiente comandos por consola:
+    
+    sudo a2ensite wordpress
+    
+    sudo a2enmod rewrite
+    
+    sudo a2dissite 000-default
+![Foto 3](https://github.com/oliver-miguez/Tarea-02-Instalacion-WordPress-Server-SXE-Oliver-Miguez-Alonso-/blob/main/3.png)
+
+Y recargamos apache para que los cambios se guarden y funcionen correctamente :
+
+    sudo service apache2 reload
